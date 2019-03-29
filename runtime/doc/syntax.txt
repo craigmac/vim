@@ -2855,7 +2855,7 @@ Define b:is_chicken or g:is_chicken, if you need them.
 SDL						*sdl.vim* *ft-sdl-syntax*
 
 The SDL highlighting probably misses a few keywords, but SDL has so many
-of them it's almost impossibly to cope.
+of them it's almost impossible to cope.
 
 The new standard, SDL-2000, specifies that all identifiers are
 case-sensitive (which was not so before), and that all keywords can be
