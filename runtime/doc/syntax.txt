@@ -4208,8 +4208,7 @@ This slows down the highlighting a lot, because it matches everywhere.
 The pattern can be followed by a character offset.  This can be used to
 change the highlighted part, and to change the text area included in the
 match or region (which only matters when trying to match other items).	Both
-are relative to the matched pattern.  The character offset for a skip
-pattern can be used to tell where to continue looking for an end pattern.
+are relative to the matched pat/re to continue looking for an end pattern.
 
 The offset takes the form of "{what}={offset}"
 The {what} can be one of seven strings:
@@ -4694,9 +4693,9 @@ in their own color.
 			Doesn't work recursively, thus you can't use
 			":colorscheme" in a color scheme script.
 
-			To customize a colorscheme use another name, e.g.
+			To customize a color scheme use another name, e.g.
 			"~/.vim/colors/mine.vim", and use `:runtime` to load
-			the original colorscheme: >
+			the original color scheme: >
 				runtime colors/evening.vim
 				hi Statement ctermfg=Blue guifg=Blue
 
@@ -4704,7 +4703,7 @@ in their own color.
 			|ColorSchemePre| autocommand event is triggered.
 			After the color scheme has been loaded the
 			|ColorScheme| autocommand event is triggered.
-			For info about writing a colorscheme file: >
+			For info about writing a color scheme file: >
 				:edit $VIMRUNTIME/colors/README.txt
 
 :hi[ghlight]		List all the current highlight groups that have
